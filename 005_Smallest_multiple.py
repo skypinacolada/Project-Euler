@@ -4,6 +4,7 @@
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 '''
 
+
 def is_prime(num):
     for n in range(2, num):
         if num%n==0 : return False 
@@ -17,10 +18,10 @@ def prime_under(maxi):
     return res
 
 
-def change_to_square(li):
+def change_to_square(li, maxi):
     for i, n in enumerate(li):
         sq = 1
-        while(n**sq <= 20):
+        while(n**sq <= maxi):
             li[i] = n**sq
             sq += 1
     return li
@@ -32,4 +33,4 @@ def smallest_divisible(li):
     return res 
 
 
-print(smallest_divisible(change_to_square(prime_under(20))))
+print(smallest_divisible(change_to_square(prime_under(20), 20)))
