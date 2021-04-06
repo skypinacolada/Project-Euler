@@ -5,17 +5,19 @@ What is the smallest positive number that is evenly divisible by all of the numb
 '''
 
 
-def is_prime(num):
-    for n in range(2, num):
+def is_prime(num, primes):
+    for n in primes:
         if num%n==0 : return False 
     return True
 
 
 def prime_under(maxi):
-    res = []
-    for n in range(2, maxi+1):
-        if is_prime(n): res.append(n)
-    return res
+    primes = [2, 3]
+    n = 3
+    while (n < maxi):
+        n += 2
+        if is_prime(n, primes): primes.append(n)
+    return primes
 
 
 def change_to_square(li, maxi):
