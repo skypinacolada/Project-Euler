@@ -5,8 +5,8 @@ What is the smallest positive number that is evenly divisible by all of the numb
 '''
 
 
-def is_prime(num, primes):
-    for n in primes:
+def is_prime(num, li):
+    for n in li:
         if num%n==0 : return False 
     return True
 
