@@ -12,12 +12,11 @@ def is_prime(num, li):
 
 
 def nth_prime(goal):
-    primes = [2, 3, 5]
-    num = 5
+    primes = [2, 3]
+    num = 3
     while (len(primes) < goal):
         num += 2
-        if str(num)[-1] != 5 and is_prime(num, primes): primes.append(num)
-    print(primes)
+        if is_prime(num, primes): primes.append(num)
     return primes[-1]
 
 
