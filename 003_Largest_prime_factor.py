@@ -7,7 +7,7 @@ What is the largest prime factor of the number 600851475143 ?
 import math
 
 def is_prime(num):
-    for i in range(2, num):
+    for i in range(2, int(num**(1/2))+1):
         if num%i==0 : return False
     return True
 

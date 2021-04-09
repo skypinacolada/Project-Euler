@@ -5,19 +5,19 @@ we can see that the 6th prime is 13.
 What is the 10001st prime number?
 '''
 
-def is_prime(num, li):
-    for n in li:
+def is_prime(num):
+    for n in range(2, int(num**(1/2))+1):
         if num % n == 0 : return False
     return True
 
 
 def nth_prime(goal):
-    primes = [2, 3]
+    cnt = 2
     num = 3
-    while (len(primes) < goal):
+    while (cnt<goal):
         num += 2
-        if is_prime(num, primes): primes.append(num)
-    return primes[-1]
+        if is_prime(num): cnt += 1
+    return num
 
 
 print(nth_prime(10001))
