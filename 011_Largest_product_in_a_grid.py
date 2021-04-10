@@ -25,7 +25,7 @@ What is the greatest product of four adjacent numbers in the same direction
 '''
 
 
-array = [[8, 2, 22, 97, 38, 15, 00, 40, 00, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
+grid = [[8, 2, 22, 97, 38, 15, 00, 40, 00, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
        [49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 00],
        [81, 49, 31, 73, 55, 79, 14, 29, 93, 71, 40, 67, 53, 88, 30, 3, 49, 13, 36, 65],
        [52, 70, 95, 23, 4, 60, 11, 42, 69, 24, 68, 56, 1, 32, 56, 71, 37, 2, 36, 91],
@@ -83,7 +83,7 @@ def diagonal_max_right(arr):
        return maxi 
 
 
-print(row_max(array))
-print(column_max(array))
-print(diagonal_max_left(array))
-print(diagonal_max_right(array))
+print(row_max(grid))
+print(column_max(grid))
+print(diagonal_max_left(grid))
+print(diagonal_max_right(grid))
