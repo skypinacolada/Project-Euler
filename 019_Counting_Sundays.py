@@ -24,10 +24,8 @@ def counting_sundays():
     sunday_cnt = 0
     day = 2
     for year in range(1901, 2001):
-        if year%4 ==0 : 
-            months = leap
-        else : 
-            months = ordinary
+        months = ordinary
+        if year%4 ==0 : months = leap
         for day_plus in months:
             day += day_plus
             if day%7 == 0: sunday_cnt += 1
