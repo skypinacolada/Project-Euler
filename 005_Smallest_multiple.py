@@ -5,6 +5,10 @@ What is the smallest positive number that is evenly divisible by all of the numb
 '''
 
 
+import datetime
+start = datetime.datetime.now()
+
+
 def is_prime(num):
     for n in range(2, int(num**(1/2))+1):
         if num%n==0 : return False 
@@ -36,3 +40,6 @@ def smallest_divisible(li):
 
 
 print(smallest_divisible(change_to_square(prime_under(20), 20)))
+print(datetime.datetime.now() - start)
+
+#0.0001s
