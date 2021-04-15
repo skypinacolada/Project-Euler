@@ -20,22 +20,26 @@ What is the value of the first triangle number to have over five hundred divisor
 '''
 
 
+import datetime
+start = datetime.datetime.now()
+
+
 tri_nums = [1, 3, 6, 10, 15, 21]
 
 
 def next_tri():
     next_i = len(tri_nums)+1
-    next_tri = tri_nums[-1] + next_i 
+    next_tri = tri_nums[-1] + next_i
     tri_nums.append(next_tri)
     return tri_nums
 
 
 def how_many_divisor(num):
-    cnt = 0 
+    cnt = 0
     for n in range(1, int(num**(1/2))+1):
-        if num % n == 0 : cnt += 2 
+        if num % n == 0 : cnt += 2
     if num % int(num**(1/2)) == 0 : cnt -= 1
-    return cnt 
+    return cnt
 
 
 def first_500_divisor():
@@ -45,3 +49,5 @@ def first_500_divisor():
 
 
 print(first_500_divisor())
+print(datetime.datetime.now() - start)
+#4s

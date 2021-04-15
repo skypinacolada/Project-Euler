@@ -3,6 +3,9 @@ Work out the first ten digits of the sum of the following one-hundred 50-digit n
 
 '''
 
+import datetime
+start = datetime.datetime.now()
+
 
 two_depth_arr = [[37107287533902102798797998220837590246510135740250],
 [46376937677490009712648124896970078050417018260538],
@@ -112,3 +115,5 @@ def large_sum(arr):
 
 
 print(large_sum(two_depth_arr))
+print(datetime.datetime.now() - start)
+#0.0001s
