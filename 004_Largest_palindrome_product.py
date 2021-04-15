@@ -27,5 +27,5 @@ def maxi_tri_palindrome():
 print(maxi_tri_palindrome())
 print(datetime.datetime.now() - start)
 
-#0.01
+#0.1 s
 

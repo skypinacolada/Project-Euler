@@ -32,4 +32,4 @@ def max_prime_factor(li):
 print(max_prime_factor(factors(600851475143)))
 print(datetime.datetime.now() - start)
 
-#0.6sec
+#0.6s
