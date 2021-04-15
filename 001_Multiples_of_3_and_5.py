@@ -6,11 +6,10 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 '''
 
 
-def sum_of_multiples(div1, div2, max):
-    res = 0
-    for num in range(1, max):
-        if num%div1==0 or num%div2==0 : res += num
-    return res
+limit = 999
 
-print(sum_of_multiples(3, 5, 10))
-print(sum_of_multiples(3, 5, 1000))
+div_3 = limit//3
+div_5 = limit//5
+div_15 = limit//15
+
+print(((div_3+1)*(div_3/2)*3) + ((div_5+1)*(div_5/2)*5) - ((div_15+1)*(div_15/2)*15))
