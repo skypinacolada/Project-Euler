@@ -4,6 +4,7 @@
 What is the sum of the digits of the number 2**1000?
 '''
 
+
 import datetime
 start = datetime.datetime.now()
 
@@ -16,4 +17,4 @@ def summa():
 
 print(summa())
 print(datetime.datetime.now() - start)
-#0.0002
+#0.0002s
