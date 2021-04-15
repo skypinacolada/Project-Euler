@@ -8,6 +8,10 @@ and the square of the sum.
 '''
 
 
+import datetime
+start = datetime.datetime.now()
+
+
 def sum_of_the_squares(mini, maxi):
     res = 0
     for n in range(mini, maxi+1):
@@ -20,3 +24,5 @@ def square_of_the_sum(mini, maxi):
 
 
 print(square_of_the_sum(1, 100)-sum_of_the_squares(1, 100))
+print(datetime.datetime.now() - start)
+#0.0001s

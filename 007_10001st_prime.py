@@ -5,6 +5,10 @@ we can see that the 6th prime is 13.
 What is the 10001st prime number?
 '''
 
+import datetime
+start = datetime.datetime.now()
+
+
 def is_prime(num):
     for n in range(2, int(num**(1/2))+1):
         if num % n == 0 : return False
@@ -14,10 +18,12 @@ def is_prime(num):
 def nth_prime(goal):
     cnt = 2
     num = 3
-    while (cnt<goal):
+    while (cnt < goal):
         num += 2
         if is_prime(num): cnt += 1
     return num
 
 
 print(nth_prime(10001))
+print(datetime.datetime.now() - start)
+#0.2s

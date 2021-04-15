@@ -8,6 +8,11 @@ There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product abc.
 '''
 
+
+import datetime
+start = datetime.datetime.now()
+
+
 def find():
     a = 1
     while (a <= 332):
@@ -18,3 +23,5 @@ def find():
         a += 1
 
 print(find())
+print(datetime.datetime.now() - start)
+#0.1s
