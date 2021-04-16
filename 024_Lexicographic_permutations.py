@@ -24,7 +24,6 @@ def fac(n):
 
 def near_to_million():
     nearing = 0 
-    
     res = ''
     for i in range(9, -1, -1):
         mul = 1
