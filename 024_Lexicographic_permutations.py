@@ -38,4 +38,4 @@ def near_to_million():
 
 print(near_to_million())
 print(datetime.datetime.now() - start)
-#0.0001
+#0.0001s
