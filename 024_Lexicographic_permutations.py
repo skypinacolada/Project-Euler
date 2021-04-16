@@ -24,15 +24,15 @@ def fac(n):
 
 def near_to_million():
     nearing = 0 
-    mul = 1
+    
     res = ''
     for i in range(9, -1, -1):
+        mul = 1
         while(nearing+mul*fac(i)<1000000) : mul += 1 
         mul -= 1
         nearing += mul*fac(i)
         res += str(digits[mul])
         digits.remove(digits[mul])
-        mul = 1
     return int(res)
 
 
